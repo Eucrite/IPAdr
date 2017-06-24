@@ -1,0 +1,9 @@
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\bin\Debug\IpAdr.exe.config
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\bin\Debug\IpAdr.exe
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\bin\Debug\IpAdr.pdb
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.csprojResolveAssemblyReference.cache
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.frmIpAdr.resources
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.Properties.Resources.resources
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.csproj.GenerateResource.Cache
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.exe
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.pdb

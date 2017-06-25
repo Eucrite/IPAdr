@@ -1,4 +1,4 @@
-﻿/*******************************************************************/
+/*******************************************************************/
 /**   PROGRAM: Form1.cs(Change name after)                        **/
 /**                                                               **/
 /**   Program Creation: Tom Yang                                  **/
@@ -37,7 +37,9 @@ namespace IpAdr
          /** append ip to label IP                                **/
          lblIP.Text += ip;
 
+         /** call function to get user country                    **/
          string country = getUserCountry(ip);
+         /** append ip to label country                           **/
          lblLocation.Text += country;
       }
 
@@ -46,38 +48,45 @@ namespace IpAdr
       {
          /** stores the ip content from the web into a string     **/
          string myIp = new WebClient().DownloadString("http://checkip.dyndns.org");
-         /** for loop to cut the front                            **/
-         for (int i=0; i < myIp.Length; i++)
-         {
-            if (myIp[i]=='A' && myIp.Substring(i, 7)=="Address")
-            {
-               myIp = myIp.Substring(i+9, myIp.Length-i-9);
-               /** for loop to cut the back                       **/
-               for (int j=0; j<myIp.Length; j++)
-               {
-                  if(myIp[j] == '<')
-                  {
-                     myIp = myIp.Substring(0, j);
-                     break;
-                  }
-               }
-               break;
-            }
-         }
+
+         /** cutting front side, size holds first index of ip     **/
+         /** address                                              **/
+         int size = myIp.IndexOf(": ")+1;
+         /** substring to cut off everything in front of ip       **/
+         myIp = myIp.Substring(size, myIp.Length - size);
+
+         /** cutting back side, size holds index immediately after**/
+         /** ip address                                           **/
+         size = myIp.IndexOf('<');
+         /** substring to cut off everything behind ip address    **/
+         myIp = myIp.Substring(1, size - 1);
+
          return myIp;
+         /** for loop to cut the front                            **/
+         
       }
 
       private string getUserCountry(string ip)
       {
+         /** stores the country info from the web into a string   **/
          string country = new WebClient().DownloadString("http://www.ip2nation.com/");
+         /** size holds first index of ip address                 **/
          int size = country.IndexOf("IP: " + ip);
+         /** substring to cut off everything infront of ip        **/
+         /** necessary due to multiple areas with ip on site      **/
          country = country.Substring(size, country.Length-size);
+
+
+         /** size holds first index of country name               **/
          size = country.IndexOf('>');
+         /** substring cuts off everything infront of country     **/
          country = country.Substring(size, country.Length - size);
 
-
+         /** size holds index immediately after the country name  **/
          size = country.IndexOf('<');
+         /** substring to cut everything after country            **/
          country = country.Substring(1, size-1);
+
          return country;
       }
    }

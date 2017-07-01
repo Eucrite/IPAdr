@@ -7,3 +7,5 @@ C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.Properties.Resources
 C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.csproj.GenerateResource.Cache
 C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.exe
 C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\obj\Debug\IpAdr.pdb
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kentsuki\Desktop\ipAPP\IpAdr\IpAdr\bin\Debug\Newtonsoft.Json.xml
